@@ -1,89 +1,183 @@
-<!-- About Section (hidden by default) -->
-<section id="main-about" style="display:none;">
-  <div class="about-hero-section">
-    <div class="about-hero-content">
-      <div class="about-icon">
-        <img src="about-icon.svg" alt="About Icon" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusFit - Learn with AI Bots</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <img src="logo.svg" alt="FocusFit Logo" class="logo" />
+      <div>
+        <span class="app-title">FocusFit</span>
+        <div class="app-subtitle">Learn with AI Bots</div>
       </div>
-      <h1>
-        About <span class="highlight">FocusFit</span>
-      </h1>
-      <p class="about-hero-desc">
-        An innovative AI-powered educational platform built for social good,<br>
-        providing free learning opportunities to underprivileged children worldwide.
+    </div>
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Sound"><span>🔊</span></button>
+      <button class="icon-btn" aria-label="Info"><span>ℹ️</span></button>
+      <button class="about-btn" id="aboutBtn">About</button>
+    </div>
+  </header>
+
+  <!-- Main Home Sections -->
+  <main id="main-home">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>
+          Learn Anything, <span class="highlight">Anywhere</span>
+        </h1>
+        <p class="hero-subtext">
+          Free AI-powered education for everyone. Chat with our specialized bots to learn Math, Science, English, Hindi, and more!
+        </p>
+        <div class="hero-badges">
+          <span class="badge"><span class="badge-icon">💖</span> 100% Free</span>
+          <span class="badge"><span class="badge-icon">👥</span> For Everyone</span>
+          <span class="badge"><span class="badge-icon">🤖</span> AI Powered</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bot Selection Section -->
+    <section class="bot-select-section">
+      <h2>Meet the 6 Powerful Bots</h2>
+      <p class="bot-select-subtext">
+        Each bot is specialized in different subjects and can tell you about virtually anything<br>
+        through smart Wikipedia integration.
       </p>
+      <div class="bots-grid">
+        <!-- Math Bot -->
+        <div class="bot-card">
+          <div class="bot-card-header">
+            <span class="bot-icon" style="color:#FFD600;">&#x1F6A9;</span>
+            <span class="bot-title">Math Bot</span>
+          </div>
+          <div class="bot-card-desc">
+            Solves math problems from basic arithmetic like 1×1 to equations like 7v = 49, square roots, cube roots, and exponent questions.
+          </div>
+          <div class="bot-tags pink">
+            <span>Algebra</span>
+            <span>Geometry</span>
+            <span>Formulas</span>
+          </div>
+        </div>
+        <!-- Science Bot -->
+        <div class="bot-card">
+          <div class="bot-card-header">
+            <span class="bot-icon" style="color:#8F00FF;">&#x1F9EA;</span>
+            <span class="bot-title">Science Bot</span>
+          </div>
+          <div class="bot-card-desc">
+            Answers questions about the physical world, biology, chemistry, physics, and pulls info from Wikipedia for complex topics.
+          </div>
+          <div class="bot-tags purple">
+            <span>Physics</span>
+            <span>Chemistry</span>
+            <span>Biology</span>
+          </div>
+        </div>
+        <!-- English Bot -->
+        <div class="bot-card">
+          <div class="bot-card-header">
+            <span class="bot-icon" style="color:#2962FF;">&#x1F4D6;</span>
+            <span class="bot-title">English Bot</span>
+          </div>
+          <div class="bot-card-desc">
+            Helps users improve language, grammar, vocabulary, and sentence structure. Perfect for English learners.
+          </div>
+          <div class="bot-tags red">
+            <span>Grammar</span>
+            <span>Vocabulary</span>
+            <span>Writing</span>
+          </div>
+        </div>
+        <!-- Hindi Bot -->
+        <div class="bot-card">
+          <div class="bot-card-header">
+            <span class="bot-icon" style="color:#FF6F00;">&#x1F4DD;</span>
+            <span class="bot-title">Hindi Bot</span>
+          </div>
+          <div class="bot-card-desc">
+            Chatbot that understands and replies in Hindi, making it easy for native speakers to learn in their language.
+          </div>
+          <div class="bot-tags orange">
+            <span>व्याकरण</span>
+            <span>शब्दावली</span>
+            <span>साहित्य</span>
+          </div>
+        </div>
+        <!-- Mental Health Bot -->
+        <div class="bot-card">
+          <div class="bot-card-header">
+            <span class="bot-icon" style="color:#FF4081;">&#x1F9E0;</span>
+            <span class="bot-title">Mental Health Bot</span>
+          </div>
+          <div class="bot-card-desc">
+            Offers friendly support to users feeling stressed, anxious, or lonely. A non-judgmental friend for emotional help.
+          </div>
+          <div class="bot-tags teal">
+            <span>Support</span>
+            <span>Wellness</span>
+            <span>Mindfulness</span>
+          </div>
+        </div>
+        <!-- Quiz Bot -->
+        <div class="bot-card">
+          <div class="bot-card-header">
+            <span class="bot-icon" style="color:#C51162;">&#x2753;</span>
+            <span class="bot-title">Quiz Bot</span>
+          </div>
+          <div class="bot-card-desc">
+            Tests what you've learned with fun quizzes. Keeps users engaged and motivated while revising subjects.
+          </div>
+          <div class="bot-tags green">
+            <span>Trivia</span>
+            <span>Practice</span>
+            <span>Challenge</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- About Section (hidden by default) -->
+  <section id="main-about" style="display:none;">
+    <div class="about-hero-section">
+      <div class="about-hero-content">
+        <div class="about-icon">
+          <img src="about-icon.svg" alt="About Icon" />
+        </div>
+        <h1>
+          About <span class="highlight">FocusFit</span>
+        </h1>
+        <p class="about-hero-desc">
+          An innovative AI-powered educational platform built for social good,<br>
+          providing free learning opportunities to underprivileged children worldwide.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="about-mission-section">
-    <h2>Our Mission</h2>
-    <p>
-      FocusFit is part of the <b>AI for Social Good</b> movement, targeting accessible learning,<br>
-      mental well-being, and curiosity-driven knowledge for everyone.
-    </p>
-    <div class="mission-cards">
-      <div class="mission-card">
-        <div class="mission-card-icon" style="background:#2ecc40;">
-          <span style="font-size:2em;">&#x2764;</span>
-        </div>
-        <div class="mission-card-title">100% Free</div>
-        <div class="mission-card-desc">
-          No hidden costs, no subscriptions. Quality education should be accessible to everyone, everywhere.
-        </div>
-      </div>
-      <div class="mission-card">
-        <div class="mission-card-icon" style="background:#2979ff;">
-          <span style="font-size:2em;">&#x1F465;</span>
-        </div>
-        <div class="mission-card-title">For Everyone</div>
-        <div class="mission-card-desc">
-          Designed for underprivileged children but accessible to learners of all backgrounds and ages.
-        </div>
-      </div>
-      <div class="mission-card">
-        <div class="mission-card-icon" style="background:#a259ff;">
-          <span style="font-size:2em;">&#x1F9E0;</span>
-        </div>
-        <div class="mission-card-title">AI Powered</div>
-        <div class="mission-card-desc">
-          Advanced AI technology that adapts to each learner's pace and provides personalized education.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="about-team-section">
-    <h2>
-      <span style="font-size:1.5em;vertical-align:middle;">👥</span>
-      Meet Our Team
-    </h2>
-    <p class="about-team-desc">
-      FocusFit is built by a passionate team dedicated to making education accessible through technology.
-    </p>
-    <div class="team-cards">
-      <div class="team-card">
-        <div class="team-avatar" style="background: linear-gradient(135deg, #4f8cff 30%, #eaf4ff 100%);">N</div>
-        <div class="team-name">Nimrat</div>
-        <div class="team-role">Developer</div>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar" style="background: linear-gradient(135deg, #4f8cff 30%, #eaf4ff 100%);">M</div>
-        <div class="team-name">Mansi</div>
-        <div class="team-role">Developer</div>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar" style="background: linear-gradient(135deg, #4f8cff 30%, #eaf4ff 100%);">S</div>
-        <div class="team-name">Surveen</div>
-        <div class="team-role">Developer</div>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar" style="background: linear-gradient(135deg, #4f8cff 30%, #eaf4ff 100%);">A</div>
-        <div class="team-name">Anshita</div>
-        <div class="team-role">Developer</div>
-      </div>
+    <div class="about-mission-section">
+      <h2>Our Mission</h2>
+      <p>
+        FocusFit is part of the <b>AI for Social Good</b> movement, targeting accessible learning,<br>
+        mental well-being, and curiosity-driven knowledge for everyone.
+      </p>
     </div>
     <div style="text-align:right;max-width:1200px;margin:0 auto;padding:24px 18px 0 0;">
       <button class="back-btn" id="backBtn">
         <span style="font-size:1.3em;vertical-align:middle;">&#8592;</span> Back to Home
       </button>
     </div>
-  </div>
-</section>
+  </section>
+
+  <footer class="app-footer">
+    &copy; 2025 FocusFit. Empowering Education.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
