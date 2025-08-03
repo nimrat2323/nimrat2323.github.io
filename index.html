@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusFit - AI Learning Bots</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FocusFit</h1>
+    <p class="hero">AI-powered learning for every child</p>
+  </header>
+
+  <section id="bot-selection">
+    <h2>Choose a Learning Bot</h2>
+    <div class="bots">
+      <button data-bot="math">Math Bot</button>
+      <button data-bot="science">Science Bot</button>
+      <button data-bot="english">English Bot</button>
+      <button data-bot="hindi">Hindi Bot</button>
+      <button data-bot="mental">Mental Health Bot</button>
+      <button data-bot="quiz">Quiz Bot</button>
+    </div>
+  </section>
+
+  <section id="chat-section" class="hidden">
+    <h2 id="chat-title"></h2>
+    <div id="chat-window"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off" required>
+      <button type="submit">Send</button>
+    </form>
+    <button id="tts-btn">🔊 Listen</button>
+    <button id="back-btn">← Back</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FocusFit | Empowering Education</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
