@@ -234,58 +234,9 @@ body {
 .bot-tags.teal span { color: #009688; }
 .bot-tags.green span { color: #43a047; }
 
-/* About Section */
-.about-section {
-  background: linear-gradient(120deg, #3789ff 0%, #2563eb 60%, #a5c8ff 100%);
-  color: #fff;
-  text-align: center;
-  padding: 68px 0 68px 0;
-}
-
-.about-icon img {
-  width: 110px;
-  height: 110px;
-  margin-bottom: 18px;
-}
-
-.about-title {
-  font-size: 3em;
-  font-weight: 700;
-  margin-bottom: 14px;
-}
-
-.about-desc {
-  font-size: 1.55em;
-  color: #eaf4ff;
-  max-width: 820px;
-  margin: 0 auto;
-  font-weight: 500;
-  opacity: 0.96;
-}
-
-/* Footer */
-.app-footer {
-  background: #f3f6fa;
-  text-align: center;
-  padding: 20px;
-  color: #2563eb;
-  font-size: 1em;
-  margin-top: 32px;
-  letter-spacing: 0.01em;
-}
-
-/* Responsive */
+/* Responsive: two columns on tablets, one on mobile */
 @media (max-width: 1200px) {
   .bots-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 900px) {
-  .app-header { padding: 12px 8px 10px 8px; }
-  .header-left .logo { width: 32px; height: 32px; }
-  .hero-section h1, .about-title { font-size: 2em; }
-  .bot-select-section h2 { font-size: 1.22em; }
-  .bots-grid { gap: 14px; }
-  .bot-card { padding: 18px 10px; min-width: 100px; font-size: 1em; }
-  .hero-content, .about-desc { max-width: 98vw; }
 }
 @media (max-width: 700px) {
   .bots-grid { grid-template-columns: 1fr; }
