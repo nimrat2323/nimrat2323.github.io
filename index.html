@@ -5,7 +5,6 @@
   <title>FocusFit - Learn with AI Bots</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <!-- You can add favicon and icons here -->
 </head>
 <body>
   <!-- Header -->
@@ -13,41 +12,42 @@
     <div class="header-left">
       <img src="brain-icon.png" alt="FocusFit Logo" class="logo" />
       <div>
-        <h1 class="app-title">FocusFit</h1>
-        <span class="app-subtitle">Learn with AI Bots</span>
+        <span class="app-title">FocusFit</span>
+        <div class="app-subtitle">Learn with AI Bots</div>
       </div>
     </div>
     <div class="header-right">
-      <button class="icon-btn" title="Sound"><span>🔊</span></button>
-      <button class="icon-btn" title="Info"><span>ℹ️</span></button>
+      <button class="icon-btn" aria-label="Sound"><span>🔊</span></button>
+      <button class="icon-btn" aria-label="Info"><span>ℹ️</span></button>
       <a href="#about" class="about-btn">About</a>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero-section">
-    <h2>
-      Learn Anything, <span class="highlight">Anywhere</span>
-    </h2>
-    <p class="hero-subtext">
-      Free AI-powered education for everyone. Chat with our specialized bots to learn Math, Science, English, Hindi, and more!
-    </p>
-    <div class="hero-badges">
-      <span class="badge"><span>💖</span> 100% Free</span>
-      <span class="badge"><span>👥</span> For Everyone</span>
-      <span class="badge"><span>🤖</span> AI Powered</span>
+    <div class="hero-content">
+      <h1>
+        Learn Anything, <span class="highlight">Anywhere</span>
+      </h1>
+      <p class="hero-subtext">
+        Free AI-powered education for everyone. Chat with our specialized bots to learn Math, Science, English, Hindi, and more!
+      </p>
+      <div class="hero-badges">
+        <span class="badge"><span class="badge-icon">💖</span> 100% Free</span>
+        <span class="badge"><span class="badge-icon">👥</span> For Everyone</span>
+        <span class="badge"><span class="badge-icon">🤖</span> AI Powered</span>
+      </div>
     </div>
   </section>
 
   <!-- Bot Selection Section -->
   <section class="bot-select-section">
-    <h3>Choose Your Learning Bot</h3>
+    <h2>Choose Your Learning Bot</h2>
     <p class="bot-select-subtext">
       Each bot is specialized in different subjects and ready to help you learn at your own pace
     </p>
-    <!-- You can add cards/buttons for each bot here -->
     <div class="bots-list">
-      <!-- Example bot cards, add your own icons/images -->
+      <!-- Add bot cards here as needed -->
       <div class="bot-card">Math Bot</div>
       <div class="bot-card">Science Bot</div>
       <div class="bot-card">English Bot</div>
@@ -57,17 +57,8 @@
     </div>
   </section>
 
-  <!-- About Section (optional) -->
-  <section id="about" class="about-section">
-    <h4>About FocusFit</h4>
-    <p>
-      FocusFit is a free AI-powered educational platform for underprivileged children and everyone, connecting you with 6 learning bots for interactive, personalized learning.
-    </p>
-  </section>
-
   <footer class="app-footer">
     &copy; 2025 FocusFit. Empowering Education.
   </footer>
-  <script src="app.js"></script>
 </body>
 </html>
