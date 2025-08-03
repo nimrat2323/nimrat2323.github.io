@@ -383,3 +383,38 @@ body {
   .mission-cards, .team-cards { flex-direction: column; align-items: center; }
   .mission-card, .team-card { min-width: 210px; max-width: 320px; }
 }
+#bot-chat-modal {
+  position: fixed; top:0; left:0; width:100vw; height:100vh; z-index:1000; display:none;
+}
+.chat-modal-overlay {
+  position:absolute; top:0; left:0; width:100vw; height:100vh; background:rgba(40,60,140,0.12);
+}
+.chat-modal-content {
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  background:#fff; border-radius:18px; box-shadow:0 2px 24px rgba(44,101,255,0.18);
+  width:380px; max-width:95vw; padding:32px 18px 18px 18px;
+  display:flex; flex-direction:column;
+}
+.close-chat-btn {
+  position:absolute; top:8px; right:18px; background:none; border:none; font-size:2em; cursor:pointer;
+}
+#chatBotTitle { text-align:center; margin-bottom:14px; font-weight:700; font-size:1.2em;}
+.chat-messages {
+  min-height:210px; max-height:300px; overflow-y:auto; background:#f7f9fd; border-radius:10px;
+  padding:12px; margin-bottom:12px; font-size:1em;
+  box-shadow:0 1px 6px rgba(44,101,255,0.02);
+}
+.chat-msg { margin-bottom:8px; }
+.chat-msg.user { text-align:right; color:#2962FF; font-weight:500;}
+.chat-msg.bot { text-align:left; color:#212c3d; }
+.chat-input-row {
+  display:flex; gap:8px;
+}
+#chatInput {
+  flex:1; padding:8px 12px; border-radius:8px; border:1px solid #e3e9f3;
+  font-size:1em; outline:none;
+}
+#sendChatBtn {
+  padding:8px 18px; background:#2962FF; color:#fff; border:none; border-radius:8px; font-weight:500; cursor:pointer;
+}
+#sendChatBtn:hover { background:#1747b2; }
