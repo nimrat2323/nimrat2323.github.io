@@ -418,3 +418,14 @@ body {
   padding:8px 18px; background:#2962FF; color:#fff; border:none; border-radius:8px; font-weight:500; cursor:pointer;
 }
 #sendChatBtn:hover { background:#1747b2; }
+
+.app-footer {
+  text-align: center;
+  padding: 32px 12px 18px 12px;
+  font-size: 1.12em;
+  color: #212c3d;
+  background: #f7f9fc;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  border-top: 1px solid #eceef3;
+}
